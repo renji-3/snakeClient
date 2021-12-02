@@ -1,9 +1,10 @@
 const net = require("net");
+const { IP, PORT } = require("./constants");
 
 const connect = function() {
   const conn = net.createConnection({
-    host: 'localhost',
-    port: 50541
+    host: IP,
+    port: PORT
   });
 
   // interpret incoming data as text
@@ -19,7 +20,7 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: 616');
-    conn.write('Say: wagwan famly');
+    conn.write('Say: ay YO');
   });
 
 

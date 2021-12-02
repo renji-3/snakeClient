@@ -6,3 +6,5 @@ console.log("Connecting ...");
 
 
 setupInput(connect());
+
+//how were messages supposed to be sent

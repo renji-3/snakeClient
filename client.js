@@ -20,7 +20,6 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: 616');
-    conn.write('Say: ay YO');
   });
 
 

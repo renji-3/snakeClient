@@ -30,6 +30,15 @@ const handleUserInput = function(key) {
   if (key === 'd') {
     connection.write('Move: right');
   }
+  if (key === 'h') {
+    connection.write('Say: ay Yo');
+  }
+  if (key === 'j') {
+    connection.write('Say: wagwan famly');
+  }
+  if (key === 'k') {
+    connection.write('Say: ur bless?');
+  }
 
 };
 

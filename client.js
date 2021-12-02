@@ -10,8 +10,18 @@ const connect = function() {
   conn.setEncoding("utf8");
 
   conn.on('connect', () => {
-    console.log('freed from this mortal coil');
+    console.log('howdy pardner');
   });
+
+  conn.on('data', (data) => {
+    console.log(data);
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: 616');
+  });
+
+
 
   return conn;
 };
